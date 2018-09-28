@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row text-center">
+    <button class=" col-sm btn btn-warning" (click)="OtherDevice(true)">Im Server:{{isOtherDevice?"Not":"Yes"}}</button>
+    <p class=" col-sm ">Status: {{msg}}</p>
+  </div>
+
+  <div class=" text-center">
+    <div class="wrapper">
+      <canvas drawable (MediaMobile)="OtherDevice($event)" (imgOut)="imgOut($event)" (genOut)="genOut($event)"></canvas>
+    </div>
+    <button class="col-md-12 btn btn-danger" (click)="canvas.clear()">Clear</button>
+  </div>
+
+
+  <div class="col-sm">
+    <h3>Prediction :{{predictedV}}</h3>
+    <h4>Prediction :{{predictedV2}}</h4>
+    <!--<chart [data]="predictions"></chart>-->
+  </div>
+  <div class="row" *ngIf="false">
+    <button *ngFor="let item of lables" class="ml-1 mb-1 col-2 btn btn-warning" (click)="SaveItem(item)">{{item}}</button>
+  </div>
+</div>
+<canvas #canvas2 style="background: #ffffff;border:2px solid #cccccc;margin-left: 100px;"></canvas>
+<p>{{dataInput|json}}</p>
+
+
+<router-outlet></router-outlet>

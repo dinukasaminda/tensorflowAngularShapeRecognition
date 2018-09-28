@@ -1,0 +1,36 @@
+{
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "Data collecter",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "csv": "^3.1.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "nodemailer": "^4.6.5",
+    "socket.io": "^2.1.1",
+    "zip-folder": "^1.0.0"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

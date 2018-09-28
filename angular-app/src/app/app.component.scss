@@ -1,0 +1,15 @@
+.wrapper {
+  display: inline-flex;
+  justify-content: flex-end;
+  border: 6px solid lighten(#acacac, 15%);
+}
+
+canvas {
+}
+
+.row {
+  margin: 10vh 5vw;
+}
+:host {
+  overflow: hidden !important;
+}
