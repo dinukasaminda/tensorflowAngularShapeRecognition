@@ -47,7 +47,7 @@ import random
 from keras.models import Sequential
 from keras.layers import Dense,Activation,Conv2D,MaxPool2D,Flatten
 
-csv_file = csv.reader(open('my-dataset-v2-shapes.csv'))
+csv_file = csv.reader(open('my-dataset-shapes.csv'))
 #header = csv_file.next()
 train_set = []
 
@@ -115,7 +115,7 @@ import scipy.misc as smp
 from matplotlib import pyplot as plt
 str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-# Create a 1024x1024x3 array of 8 bit unsigned integers
+# Create a 1024x1024x3 array of 8 bit unsigned integers 
 vl =100
 x_train1 =x_train[vl].reshape([28,28])
 print(str[y_train[vl]])
@@ -127,7 +127,7 @@ for p in x_train1:
       ic = 1
     ln1+= "{0}".format(ic)
   print(ln1)
-#print(x_train[0])
+#print( x_train[0] )
 '''
 # Create a 1024x1024x3 array of 8 bit unsigned integers
 for vl in range(0,10):
